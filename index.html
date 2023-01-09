@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendbook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/75099956fb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--creating the container with columns and rows-->
+    <nav>
+        <div class="nav-left">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <ul>
+                <li><img src="images/notification.png"</li>
+                <li><img src="images/inbox.png"</li>
+                <li><img src="images/video.png"</li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png">          
+                <input type="text" placeholder="secrch">
+            </div>
+            <div class="user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png">
+            </div>
+        </div>
+<!-----------------Settings menu dropdown------------------------->
+        <div class="settings-menu">
+
+            <!--Toggle button to change between dark and light mode-->
+
+            <div id="dark-btn" class="dark-btn-on">
+                <span></span>
+            </div>
+            <div class="Settings-inner-profile">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>Aman Prasad</p>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Feedback</p>
+                        <a href="#">Express your feelings!</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Setting and Privacy <img src="images/arrow.png" width="8px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display and Accessbility <img src="images/arrow.png" width="8px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help and Support <img src="images/arrow.png" width="8px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#">Log Out <img src="images/arrow.png" width="8px"></a>
+                </div>
+    
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+    <!---------------left sidebar----------------->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png"> Latest news</a>
+                <a href="#"><img src="images/friends.png"> Friends</a>
+                <a href="#"><img src="images/group.png"> Group</a>
+                <a href="#"><img src="images/marketplace.png"> Marketplace</a>
+                <a href="#"><img src="images/watch.png"> Watch</a>
+                <a href="#">see more</a>
+            </div>
+
+            <div class="shortcut-links">
+                <p><b>Your Shortcuts</b></p>
+                <a href="#"><img src="images/shortcut-1.png"> Web Developers</a>
+                <a href="#"><img src="images/shortcut-2.png"> Web Design Course</a>
+                <a href="#"><img src="images/shortcut-3.png"> Full Stack Development</a>
+                <a href="#"><img src="images/shortcut-4.png"> Website Experts</a>
+            </div>
+
+
+        </div>
+    <!--------------Main content----------------------->    
+        <div class="main-content">
+            <div class="story-gallary">
+                <div class="story story-1">
+                    <img src="images/upload.png">
+                    <p>Post story</p>
+                </div>
+                <div class="story story-2">
+                    <img src="images/member-1.png">
+                    <p>Sweta Devi</p>
+                </div>
+                <div class="story story-3">
+                    <img src="images/member-2.png">
+                    <p>Anurag Prasad</p>
+                </div>
+                <div class="story story-4">
+                    <img src="images/member-3.png">
+                    <p>Sanu Mishra</p>
+                </div>
+                <div class="story story-5">
+                    <img src="images/member-4.png">
+                    <p>Rohit Garg</p>
+                </div>
+            </div>
+
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>Aman Prasad</p>
+                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, Aman?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png"> Live Video</a>
+                        <a href="#"><img src="images/photo.png"> Photo/Video</a>
+                        <a href="#"><img src="images/feeling.png"> Feeling Activity</a>
+                    </div>
+                    
+
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Aman Prasad</p>
+                            <small>July 24 2022, 17:02 pm</small>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                
+                <p class="post">This is Aman Prasad official profile. You can see pics, watch live streams, and much more.</p>
+                <img src="images/feed-image-1.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="icon-activity">
+                        <div><img src="images/like-blue.png">120</div>
+                        <div><img src="images/comments.png">34</div>
+                        <div><img src="images/share.png">2</div>
+
+                    </div>
+                    <div class="post-profile">
+                        <img src="images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            
+            </div>
+
+            <!--2nd post-->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Aman Prasad</p>
+                            <small>July 19 2022, 18:02 pm</small>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                
+                <p class="post">This is Aman's beautiful evening in a beach with a bunch of friend's enjoying together that makes evening more memorable.<i class="fa-solid fa-face-smile-wink"></i> Do you wanna come to enjoy?</p>
+                <img src="images/feed-image-2.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="icon-activity">
+                        <div><img src="images/like-blue.png">1k</div>
+                        <div><img src="images/comments.png">345</div>
+                        <div><img src="images/share.png">34</div>
+
+                    </div>
+                    <div class="post-profile">
+                        <img src="images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            
+            </div>
+            <!---------3rd row---------->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Aman Prasad</p>
+                            <small>July 18 2022, 18:02 pm</small>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                
+                <p class="post">OHHHOOOOOO That's a wonderful moment with the once whom d you want to spend a quality time.<i class="fa-solid fa-face-smile-wink"></i> Friends are like chocochips in the life.</p>
+                <img src="images/feed-image-3.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="icon-activity">
+                        <div><img src="images/like-blue.png">1k</div>
+                        <div><img src="images/comments.png">345</div>
+                        <div><img src="images/share.png">34</div>
+
+                    </div>
+                    <div class="post-profile">
+                        <img src="images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+                <!-------4th row-------->
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Aman Prasad</p>
+                            <small>May 25 2022, 08:02 am</small>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                
+                <p class="post">Look how beautifu she is, the smile is incredabile and the passion to work make her perfction but only when she is giving a pose for a pic.<i class="fa-solid fa-face-awesome"></i></p>
+                <img src="images/feed-image-4.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="icon-activity">
+                        <div><img src="images/like-blue.png">1k</div>
+                        <div><img src="images/comments.png">345</div>
+                        <div><img src="images/share.png">34</div>
+
+                    </div>
+                    <div class="post-profile">
+                        <img src="images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!----------5th row------------>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Aman Prasad</p>
+                            <small>May 15 2022, 1:44 pm</small>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                
+                <p class="post">A wonderful meeting with the client menat to be the successful day. A day well spent in the office.</p>
+                <img src="images/feed-image-5.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="icon-activity">
+                        <div><img src="images/like-blue.png">1k</div>
+                        <div><img src="images/comments.png">345</div>
+                        <div><img src="images/share.png">34</div>
+
+                    </div>
+                    <div class="post-profile">
+                        <img src="images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+                
+            </div>
+
+            <button type="button" class="load-more-btn">Load More</button>
+            
+        </div>
+
+    <!---------right sidebar--------------------->    
+        <div class="right-sidebar">
+            <div class="headings">
+                <h4>Events</h4>
+                <a href="#">See all</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>August</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social media</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Tambram Chennai</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>August</span>
+                </div>
+                <div class="right-event">
+                    <h4>Machine Learning</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Mahabalipuram</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="advertise">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/advertisement.png" class="advertise-img">
+            
+
+            <div class="convertation">
+                <h4>Convertation</h4>
+                <a href="#">Hide chat</a>
+            </div>
+
+            <div class="convertation-chat">
+                <div class="online">
+                    <img src="images/member-1.png">
+                </div>
+                <p>Sweta Devi</p>
+            </div>
+            <div class="convertation-chat">
+                <div class="online">
+                    <img src="images/member-2.png">
+                </div>
+                <p>Anurag Prasad</p>
+            </div>
+            <div class="convertation-chat">
+                <div class="online">
+                    <img src="images/member-3.png">
+                </div>
+                <p>Sanu Mishra</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright 2022 - Aman Prasad</p>
+    </div>
+
+    <!--Script file connection to javascript-->
+    <script src="script.js "></script>
+
+    
+</body>
+</html>
